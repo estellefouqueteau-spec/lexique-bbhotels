@@ -114,14 +114,13 @@ header h1 {
     line-height: 1.5;
 }
 
-/* Footer */
 /* --- FOOTER (DESKTOP) --- */
 footer {
     position: sticky;
     bottom: 0;
     width: 100%; 
     background-color: var(--bg-color);
-    padding: 20px 0;
+    padding: 12px 0; /* Réduit : avant c'était 20px */
     z-index: 999;
     border-top: 1px solid var(--footer-border);
     box-shadow: 0 -12px 30px var(--footer-shadow);
@@ -134,22 +133,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 15px; /* Réduit : avant c'était 25px */
     width: 100%;
-    max-width: 1100px; /* Agrandi pour faire tenir les 3 boutons */
+    max-width: 1100px; 
     padding: 0 20px;
     box-sizing: border-box;
 }
 
 .footer-text {
     font-weight: 600;
-    font-size: 1.05rem;
-    white-space: nowrap; /* Empêche le texte de se couper sur 2 lignes */
+    font-size: 0.9rem; /* Réduit : avant c'était 1.05rem */
+    white-space: nowrap; 
 }
 
 .footer-buttons {
     display: flex;
-    gap: 15px;
+    gap: 10px; /* Réduit : avant c'était 15px */
     align-items: center;
 }
 
@@ -158,13 +157,13 @@ footer {
     background-color: var(--bb-anise-green, #C4D600);
     color: var(--bb-dark-green, #00302E);
     text-decoration: none;
-    padding: 12px 25px;
+    padding: 8px 18px; /* Réduit : avant c'était 12px 25px */
     font-weight: 700;
-    border-radius: 25px;
+    border-radius: 20px; /* Ajusté pour rester bien arrondi */
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.75rem; /* Réduit : avant c'était 0.9rem */
     transition: opacity 0.3s ease, transform 0.2s ease;
-    white-space: nowrap; /* Le texte des boutons reste sur 1 ligne */
+    white-space: nowrap; 
 }
 
 .btn-propose:hover {
