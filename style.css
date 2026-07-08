@@ -172,6 +172,12 @@ footer {
     transform: translateY(-2px);
 }
 
+body.light-mode footer {
+    background-color: rgba(246, 249, 245, 0.85); /* Fond légèrement transparent */
+    backdrop-filter: blur(8px); /* Effet de flou sur ce qui passe en dessous */
+    -webkit-backdrop-filter: blur(8px); /* Pour Safari */
+}
+
 /* --- FOOTER MENU DÉFILANT (MOBILE) --- */
 @media (max-width: 850px) {
     .footer-content {
