@@ -17,7 +17,7 @@
 
 /* Redéfinition des variables pour le Mode Clair */
 body.light-mode {
-    --bg-color: var(--bb-white);
+    --bg-color: transparent;
     --text-color: var(--bb-dark-green);
     --card-bg: #f9f9f9;
     --card-border: var(--bb-dark-green);
