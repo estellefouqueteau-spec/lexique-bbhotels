@@ -158,9 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('light-mode');
         
         if (document.body.classList.contains('light-mode')) {
-            themeToggle.textContent = 'Passer en mode sombre 🌙';
+            themeToggle.textContent = 'Mode sombre 🌙';
         } else {
-            themeToggle.textContent = 'Passer en mode clair ☀️';
+            themeToggle.textContent = 'Mode clair ☀️';
         }
     });
 
