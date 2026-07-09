@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexique du Siège | B&B HOTELS</title>
+
+    <link rel="icon" type="image/png" href="media/favicon.png?v=2">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Changer le thème">Mode clair ☀️</button>
+
+    <div class="container">
+        <header>
+            <h1>Le Décodeur B&B HOTELS</h1>
+            <p>Le lexique du siège pour survivre à votre première réunion.</p>
+        </header>
+
+        <main>
+            <div class="search-container" style="display: flex; gap: 10px; max-width: 800px; margin: 0 auto 20px auto; position: relative;">
+                <input type="text" id="searchInput" placeholder="Tapez un mot, un acronyme ou un domaine (ex: Finance)..." style="flex-grow: 1;">
+                
+                <button id="filterToggleBtn" class="filter-toggle-btn">Filtres ▾</button>
+                
+                <div id="tagsDropdown" class="tags-dropdown hidden">
+                    <p style="margin: 0 0 10px 0; font-size: 0.85rem; color: #666;">Filtrer par thématique :</p>
+                    <div id="tagsList" class="tags-list">
+                        </div>
+                </div>
+            </div>
+
+            <!-- Conteneur pour l'alphabet -->
+            <div id="alphabetContainer" class="alphabet-container">
+                <!-- Boutons générés automatiquement par le JavaScript -->
+            </div>
+            
+            <div id="resultsContainer" class="results-container">
+                </div>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <span class="footer-text">Il manque quelque chose ?</span>
+            <div class="footer-buttons">
+                <!-- Remplace les # par tes vrais liens Google Forms / Sheets -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfufZ0Whooj0NL07Zvr9Aai2jYd6_8A6YlXc1nuRCGoER0K9Q/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-propose">Demander une définition</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScvUkYW-E8ms0Ho7DjaQyoQNI61bigPlJWOVfq2VoRRm8o69A/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-propose">Ajouter une définition</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Remonter en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
